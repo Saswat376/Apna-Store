@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_application_1/widget/widget.dart';
-import 'package:flutter_application_1/pages/Order.dart';
 import 'package:flutter_application_1/pages/home.dart';
 import 'package:flutter_application_1/pages/profile.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';

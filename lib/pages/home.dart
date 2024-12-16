@@ -54,9 +54,14 @@ class _HomeState extends State<Home> {
               Icons.home_outlined,
               color: Colors.white,
             ),
-            Icon(
-              Icons.shopping_bag_outlined,
-              color: Colors.white,
+            GestureDetector(
+              onTap: () {
+                Navigator.of(context).pushNamed('order');
+              },
+              child: Icon(
+                Icons.shopping_bag_outlined,
+                color: Colors.white,
+              ),
             ),
             GestureDetector(
               onTap: () {
@@ -147,7 +152,7 @@ class _HomeState extends State<Home> {
                             fontWeight: FontWeight.bold),
                       ))),
                   Expanded(
-                    child: Container(
+                    child: SizedBox(
                       height: 130,
                       child: ListView.builder(
                           padding: EdgeInsets.zero,
@@ -174,7 +179,7 @@ class _HomeState extends State<Home> {
               SizedBox(
                 height: 20.0,
               ),
-              Container(
+              SizedBox(
                 height: 200,
                 child: ListView(
                   shrinkWrap: true,
@@ -322,7 +327,7 @@ class _HomeState extends State<Home> {
 
 class CategoryTile extends StatelessWidget {
   String image;
-  CategoryTile({required this.image});
+  CategoryTile({super.key, required this.image});
 
   @override
   Widget build(BuildContext context) {
