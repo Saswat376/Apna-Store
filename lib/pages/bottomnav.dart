@@ -53,7 +53,6 @@ class _BottomnavState extends State<Bottomnav> {
             Icon(
               Icons.person_outlined,
               color: Colors.white,
-              
             ),
           ]),
       body: pages[currentTabIndex],
